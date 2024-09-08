@@ -1,0 +1,68 @@
+@import "../../common/styles/font-styles.scss";
+@import "../../common/styles/typography.scss";
+@import "../../common/styles/colors.scss";
+@import "../../common/styles/breakpoints.scss";
+
+.about__section {
+  padding: 20px 50px;
+  margin-top: 300px;
+}
+
+.about_section-heading {
+  @include poppins-extrabold;
+  @extend .font-xl;
+  text-transform: uppercase;
+}
+
+.about__description {
+  @include poppins-light;
+  @extend .font-xs;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+.skills {
+  display: flex;
+  margin-top: 50px;
+  gap: 50px;
+}
+
+.skill__section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.skill__title {
+  @include poppins-semibold;
+  @extend .font-sm;
+  margin-bottom: 20px;
+}
+
+.skill__name {
+  @include poppins-light;
+  @extend .font-xs;
+  list-style: circle;
+}
+
+.skill__name::before {
+  content: "• "; /* Replace "•" with your desired bullet character */
+  margin-right: 0.5em; /* Adjust spacing as needed */
+}
+
+.skill__name-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.skill__name-column {
+  display: flex;
+  gap: 50px;
+}
+
+@media (max-width: $breakpoint-md) {
+  .about__section {
+    padding: 20px;
+  }
+}

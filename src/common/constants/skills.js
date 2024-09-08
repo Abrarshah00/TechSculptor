@@ -29,5 +29,12 @@ export const skills = {
     ],
     apis: [
         "Google Maps API"
+    ],
+    strategies: [
+        "Analytical and Critical Thinking",
+        "Strategic Planning",
+        "Communication and Collaboration",
+        "Adaptability and Innovation",
+        "Leadership and Decision-Making"
     ]
 };

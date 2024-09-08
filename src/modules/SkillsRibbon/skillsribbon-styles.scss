@@ -5,27 +5,29 @@
 .skills__ribbon {
   position: relative;
   margin-top: 100px;
+  margin-bottom: 50px; /* Add margin-bottom */
+  padding: 0px 20px;
 }
 
 .black__strip {
-  width: 100%;
+  width: 99%;
   background-color: $neutral-color-1;
   height: 80px;
   position: absolute;
   top: 0;
   left: 0;
-  transform: rotate(-9deg) skew(0deg, 10deg);
+  transform: rotate(-9deg) skew(-8deg, 10deg);
 }
 
 .red__strip {
-  width: 100%;
+  width: 99%;
   background-color: $secondary-color;
   height: 80px;
   position: absolute;
   top: 0;
   left: 0;
   transform: rotate(-12deg) skew(-10deg, 10deg);
-  padding: 0px 30px;
+  // padding: 0px 10px;
   display: flex;
   align-items: center;
 }

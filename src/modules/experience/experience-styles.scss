@@ -1,0 +1,19 @@
+@import "../../common/styles/font-styles.scss";
+@import "../../common/styles/typography.scss";
+@import "../../common/styles/colors.scss";
+@import "../../common/styles/breakpoints.scss";
+
+.experience__section {
+  background-color: $neutral-color-1;
+  padding: 20px 50px;
+}
+
+.experience__section-heading {
+  @include poppins-extrabold;
+  @extend .font-xl;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.experience__timeline-section {
+}

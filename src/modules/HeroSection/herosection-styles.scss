@@ -36,6 +36,7 @@
   @extend .font-xs;
   margin-top: 10px;
   width: 80%;
+  text-align: justify;
 }
 
 @media (max-width: $breakpoint-md) {
