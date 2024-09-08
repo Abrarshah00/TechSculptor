@@ -13,7 +13,7 @@ const Navbar = () => {
 
     return (
         <div className="navbar">
-            <div className="navbar__title">TechSculptor</div>
+            <div className="navbar__title">Abrar.</div>
             <div className="navbar__menu">
                 {Object.values(ROUTES).map((route) => (
                     <div

@@ -1,0 +1,55 @@
+@import "../../common/styles/font-styles.scss";
+@import "../../common/styles/typography.scss";
+@import "../../common/styles/colors.scss";
+@import "../../common/styles/breakpoints.scss";
+
+.hero__section {
+  padding: 20px 50px;
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.my-image {
+  width: 500px;
+  border: none;
+  border-radius: 10px;
+}
+
+.intro__section {
+  flex: 1;
+  // margin-right: 40px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 20px;
+}
+
+.headline {
+  @include poppins-extrabold;
+  @extend .font-xl;
+}
+
+.intro-text {
+  @include poppins-light;
+  @extend .font-xs;
+  margin-top: 10px;
+  width: 80%;
+}
+
+@media (max-width: $breakpoint-md) {
+  .hero__section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .intro__section {
+    margin: 0;
+  }
+  .my-image {
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+  }
+}

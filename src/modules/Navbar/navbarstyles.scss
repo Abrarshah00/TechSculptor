@@ -15,6 +15,7 @@
 .navbar__title {
   @include poppins-bold;
   @extend .font-sm;
+  flex: 1;
 }
 
 .navbar__menu {
@@ -48,4 +49,14 @@
 
 .navbar__actions > * {
   margin-left: 10px; /* Space between action buttons */
+}
+
+@media (max-width: $breakpoint-md) {
+  .navbar__menu {
+    display: none;
+  }
+
+  .navbar {
+    padding: 20px;
+  }
 }

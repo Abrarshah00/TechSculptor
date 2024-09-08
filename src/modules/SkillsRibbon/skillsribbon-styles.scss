@@ -1,0 +1,52 @@
+@import "../../common/styles/colors.scss";
+@import "../../common/styles/font-styles.scss";
+@import "../../common/styles/typography.scss";
+@import "../../common/styles/breakpoints.scss";
+.skills__ribbon {
+  position: relative;
+  margin-top: 100px;
+}
+
+.black__strip {
+  width: 100%;
+  background-color: $neutral-color-1;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-9deg) skew(0deg, 10deg);
+}
+
+.red__strip {
+  width: 100%;
+  background-color: $secondary-color;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-12deg) skew(-10deg, 10deg);
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+}
+
+.skills__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  overflow: hidden;
+}
+
+.skill__label {
+  @include poppins-semibold;
+  @extend .font-xs;
+  color: $white-color;
+  white-space: nowrap;
+}
+
+@media (max-width: $breakpoint-md) {
+  .red__strip {
+    padding: 0px;
+  }
+}
