@@ -1,0 +1,9 @@
+// Correct import for SCSS files
+@import "./common/styles/font-styles.scss";
+@import "./common/styles/typography.scss";
+@import "./common/styles/colors.scss";
+
+.landing-page {
+  height: 100%;
+  background-color: $background-color;
+}

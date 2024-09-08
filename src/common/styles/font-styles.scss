@@ -1,0 +1,80 @@
+@mixin poppins($weight: 400, $style: normal) {
+  font-family: "Poppins", system-ui;
+  font-weight: $weight;
+  font-style: $style;
+}
+
+// Now you can define specific mixins for different font weights and styles
+
+@mixin poppins-thin {
+  @include poppins(100, normal);
+}
+
+@mixin poppins-extralight {
+  @include poppins(200, normal);
+}
+
+@mixin poppins-light {
+  @include poppins(300, normal);
+}
+
+@mixin poppins-regular {
+  @include poppins(400, normal);
+}
+
+@mixin poppins-medium {
+  @include poppins(500, normal);
+}
+
+@mixin poppins-semibold {
+  @include poppins(600, normal);
+}
+
+@mixin poppins-bold {
+  @include poppins(700, normal);
+}
+
+@mixin poppins-extrabold {
+  @include poppins(800, normal);
+}
+
+@mixin poppins-black {
+  @include poppins(900, normal);
+}
+
+// Mixins for italic versions
+@mixin poppins-thin-italic {
+  @include poppins(100, italic);
+}
+
+@mixin poppins-extralight-italic {
+  @include poppins(200, italic);
+}
+
+@mixin poppins-light-italic {
+  @include poppins(300, italic);
+}
+
+@mixin poppins-regular-italic {
+  @include poppins(400, italic);
+}
+
+@mixin poppins-medium-italic {
+  @include poppins(500, italic);
+}
+
+@mixin poppins-semibold-italic {
+  @include poppins(600, italic);
+}
+
+@mixin poppins-bold-italic {
+  @include poppins(700, italic);
+}
+
+@mixin poppins-extrabold-italic {
+  @include poppins(800, italic);
+}
+
+@mixin poppins-black-italic {
+  @include poppins(900, italic);
+}

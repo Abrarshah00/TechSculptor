@@ -1,0 +1,51 @@
+@import "../../common/styles/font-styles.scss";
+@import "../../common/styles/typography.scss";
+@import "../../common/styles/colors.scss";
+
+.navbar {
+  width: 100%;
+  height: 10%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  padding: 20px 50px;
+  box-sizing: border-box;
+}
+
+.navbar__title {
+  @include poppins-bold;
+  @extend .font-sm;
+}
+
+.navbar__menu {
+  flex: 1; /* Allows the menu to take up available space */
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Distribute menu items evenly */
+}
+
+.navbar__menu-link {
+  @include poppins-light;
+  @extend .font-xxs;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; // Add transition for smooth animation
+
+  &.active {
+    font-weight: 500;
+    @include poppins-bold; // Replace with your desired active color
+    color: $primary-color; // Replace with your desired active color
+  }
+}
+
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Aligns the actions to the right */
+  margin-left: 20px; /* Adds margin to the left of actions */
+  padding-right: 20px; /* Ensures padding on the right side */
+  gap: 10px;
+}
+
+.navbar__actions > * {
+  margin-left: 10px; /* Space between action buttons */
+}

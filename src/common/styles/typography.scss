@@ -1,0 +1,70 @@
+@import "./breakpoints.scss"; // Base font size
+
+$font-base: 16px;
+
+// Font sizes for different devices
+$font-xxsmall: 12px;
+$font-small: 14px;
+$font-medium: 18px;
+$font-large: 24px;
+$font-xlarge: 32px;
+$font-xxlarge: 40px;
+
+// Responsive font-size classes
+.font-xxs {
+  font-size: $font-xxsmall;
+  @media (min-width: $breakpoint-md) {
+    font-size: $font-base;
+  }
+  @media (min-width: $breakpoint-lg) {
+    font-size: $font-small;
+  }
+}
+
+// Responsive font-size classes
+.font-xs {
+  font-size: $font-small;
+  @media (min-width: $breakpoint-md) {
+    font-size: $font-base;
+  }
+  @media (min-width: $breakpoint-lg) {
+    font-size: $font-medium;
+  }
+}
+
+.font-sm {
+  font-size: $font-base;
+  @media (min-width: $breakpoint-md) {
+    font-size: $font-medium;
+  }
+  @media (min-width: $breakpoint-lg) {
+    font-size: $font-large;
+  }
+}
+
+.font-md {
+  font-size: $font-medium;
+  @media (min-width: $breakpoint-md) {
+    font-size: $font-large;
+  }
+  @media (min-width: $breakpoint-lg) {
+    font-size: $font-xlarge;
+  }
+}
+
+.font-lg {
+  font-size: $font-large;
+  @media (min-width: $breakpoint-md) {
+    font-size: $font-xlarge;
+  }
+  @media (min-width: $breakpoint-lg) {
+    font-size: $font-xxlarge;
+  }
+}
+
+.font-xl {
+  font-size: $font-xlarge;
+  @media (min-width: $breakpoint-md) {
+    font-size: $font-xxlarge;
+  }
+}
