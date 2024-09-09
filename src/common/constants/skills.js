@@ -36,6 +36,7 @@ export const skills = {
 export const experiences = [
   {
     companyName: "Bridgestone Mobility Solutions (Webfleet)",
+    companyLink: 'https://www.webfleet.com/en_gb/webfleet/',
     designation: "Software Engineer",
     duration: "Jan 2024 - Present",
     description:
@@ -43,6 +44,7 @@ export const experiences = [
   },
   {
     companyName: "Lobb Logistics",
+    companyLink: 'https://lobb.in/',
     designation: "Software Developer Level 4",
     duration: "Apr 2022 - Jan 2024",
     description:
@@ -50,6 +52,7 @@ export const experiences = [
   },
   {
     companyName: "Wipadika Innovations",
+    companyLink: 'https://wipadika.com/',
     designation: "Software Developer",
     duration: "Apr 2021 - Apr 2022",
     description:

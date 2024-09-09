@@ -3,7 +3,9 @@ import "./experience-styles.scss";
 import { experiences } from "src/common/constants/skills";
 
 const Experience = () => {
-
+    const handleRedrect = (link) => {
+        window.open(link, "_blank");
+    }
 
     return (
         <div className="experience__section">
@@ -12,7 +14,7 @@ const Experience = () => {
                 <div className="timeline">
                     {experiences?.map((experience) => (
                         <div className="event">
-                            <div className="company__name">{experience?.companyName}</div>
+                            <div className="company__name" onClick={() => handleRedrect(experience?.companyLink)}>{experience?.companyName}</div>
                             <div className="dot"></div>
                             <div className="content">
                                 <div className="designation__title">{experience?.designation}</div>

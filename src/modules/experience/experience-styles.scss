@@ -39,6 +39,7 @@
   color: $white-color;
   @include poppins-bold;
   @extend .font-xs;
+  cursor: pointer;
 }
 
 .dot {
