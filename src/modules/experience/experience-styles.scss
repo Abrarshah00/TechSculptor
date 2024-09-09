@@ -17,3 +17,115 @@
 
 .experience__timeline-section {
 }
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.event {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensure content is on the right */
+  width: 100%;
+}
+
+.company__name {
+  width: 20%;
+  text-align: left; /* Align title to the left */
+  //   margin-right: 20px; /* Adjust margin for spacing */
+  color: $white-color;
+  @include poppins-bold;
+  @extend .font-xs;
+}
+
+.dot {
+  position: relative;
+  top: 50%;
+  left: calc(16% + 15px); /* Adjust the percentage and pixel value as needed */
+  transform: translateY(-50%) translateX(30%);
+  margin-right: 10px; /* Adjust margin as needed */
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $primary-color;
+}
+
+.content {
+  width: 50%;
+  padding: 20px;
+  position: relative;
+  left: 5%;
+  color: $white-color;
+}
+
+.designation__title {
+  @include poppins-bold;
+  @extend .font-xs;
+}
+
+.designation__duration {
+  @include poppins-semibold-italic;
+  @extend .font-xxs;
+}
+
+.designation__description {
+  @include poppins-light;
+  @extend .font-xxs;
+}
+
+.event::before {
+  content: "";
+  position: absolute;
+  left: calc(50% + 10px); /* Adjust this value based on dot size */
+  transform: translateX(-50%);
+  top: 0;
+  bottom: 0;
+  border-left: 2px solid $primary-color;
+}
+
+@media (max-width: $breakpoint-xl) {
+  .dot {
+    left: calc(
+      16% + 20px
+    ); /* Adjust the percentage and pixel value as needed */
+    transform: translateY(-50%) translateX(30%);
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+  .dot {
+    left: calc(
+      16% + 15px
+    ); /* Adjust the percentage and pixel value as needed */
+    transform: translateY(-50%) translateX(30%);
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .company__name {
+    width: 100%;
+  }
+
+  .dot {
+    left: 0;
+    transform: none;
+  }
+
+  .content {
+    width: 100%;
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .event::before {
+    display: none; /* Hide the line on smaller screens */
+  }
+}

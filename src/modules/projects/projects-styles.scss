@@ -1,0 +1,43 @@
+@import "../../common/styles/font-styles.scss";
+@import "../../common/styles/typography.scss";
+@import "../../common/styles/colors.scss";
+@import "../../common/styles/breakpoints.scss";
+
+.projects__section {
+  //   background-color: $accent-color;
+  padding: 20px 50px;
+}
+.projects__section-heading {
+  @include poppins-extrabold;
+  @extend .font-xl;
+  text-transform: uppercase;
+  color: $neutral-color-1;
+}
+
+.projects__card-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.projects__card {
+  width: 300px;
+  height: 100px;
+  background-color: transparent;
+  //   border: 2px solid lightgray;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  padding: 10px;
+}
+
+.project__name {
+  @include poppins-bold;
+  @extend .font-xs;
+  color: $primary-color;
+  //   display: flex;
+  //   align-items: center;
+  //   list-style: bullet;
+  margin-bottom: 10px;
+  cursor: pointer;
+}

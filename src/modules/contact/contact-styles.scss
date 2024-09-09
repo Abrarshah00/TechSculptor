@@ -1,0 +1,49 @@
+@import "../../common/styles/font-styles.scss";
+@import "../../common/styles/typography.scss";
+@import "../../common/styles/colors.scss";
+@import "../../common/styles/breakpoints.scss";
+
+.banner {
+  width: 100%;
+  //   height: 100px;
+  background-color: $secondary-color;
+  padding: 40px 10px;
+}
+
+.banner__message {
+  @include poppins-semibold;
+  @extend .font-xl;
+  color: $white-color;
+  text-align: center;
+}
+
+.contact__section {
+  margin-top: 50px;
+  padding: 40px 10px;
+}
+
+.contact__message {
+  @include poppins-bold;
+  @extend .font-xl;
+  text-align: center;
+}
+
+.contact__email {
+  @include poppins-light;
+  @extend .font-sm;
+  text-align: center;
+  margin-top: 20px;
+  color: $primary-color;
+}
+.social__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 40px 0px;
+}
+@media (max-width: $breakpoint-md) {
+  .banner {
+    padding: 10px;
+  }
+}

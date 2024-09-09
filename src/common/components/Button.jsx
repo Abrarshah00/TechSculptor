@@ -1,9 +1,9 @@
 import React from 'react'
 import "./styles/button-styles.scss"
 
-const Button = ({ buttonText, variant }) => {
+const Button = ({ buttonText, variant, onClick }) => {
     return (
-        <button className={variant || 'button-primary'}>{buttonText}</button>
+        <button className={variant || 'button-primary'} onClick={onClick}>{buttonText}</button>
     )
 }
 
